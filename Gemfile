@@ -16,6 +16,10 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+  gem 'pg'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
