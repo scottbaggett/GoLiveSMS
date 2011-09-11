@@ -1,6 +1,8 @@
 Golivesms::Application.routes.draw do
   root :to => "site#index"
-
+  match "/terms-and-conditions" => "site#terms",  :as => "terms"
+  match "/privacy-policy" => "site#privacy",  :as => "privacy"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

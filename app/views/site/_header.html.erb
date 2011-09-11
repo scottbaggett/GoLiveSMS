@@ -1,0 +1,13 @@
+<div id="header">
+	<div class="container_12">
+		<div class="grid_12">
+			<div class="left"><a href='/'><img src="/assets/header-logo.jpg"></a></div>
+			<div class="right">
+				<%=section_link('Home',:controller => 'site', :action => 'index')%>
+				<%=section_link('Terms & Conditions',:controller => 'site', :action => 'terms' )%>
+				<%= link_to 'Privacy Policy', privacy_path, :class => "nav privacy" %>			
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>

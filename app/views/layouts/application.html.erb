@@ -7,34 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container_12">
-	<div class="grid_12">
-		<div class="left"><a href='/'><img src="/assets/header-logo.jpg"></a></div>
-		<div class="right">
-			<a class="nav home" href="/">Home</a>
-			<a class="nav terms" href="/terms-and-conditions">Terms &amp; Conditions</a>
-			<a class="nav privacty" href="/privacy-policy">Privacy Policy</a>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-
+<%= render 'header' %>
 <%= yield %>
-<div id="footer">
-	<div class="container_12">
-		<div class="grid_12">
-			<div class="left">&copy; 2011 GoLiveSMS. All Rights Reserved.&nbsp;&nbsp;&nbsp;Contact us at <a href="sales@golivesms.com">sales@golivesms.com</a> or call us toll free at (866) 989-2208</div>
-			<div class="right">
-				<ul>
-					<li><a href="/">home</a></li>
-					<li><a href="/terms-and-conditions">terms & conditions</a></li>
-					<li><a href="/privacy-policy">privacy policy</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-	
-	
-	</body>
-	</html>
+<%= render 'footer' %>
+</body>
+</html>

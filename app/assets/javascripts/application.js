@@ -7,3 +7,20 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function() {
+	
+		/// footer
+		
+		var f = $("#footer")
+					.css("height","50px")
+					.css("lineHeight","50px")
+
+
+		$(window).resize(function(){
+			console.log("resize!")
+			if ( $("body").outerHeight() < $(window).height() )	f.offset({top:$(window).height()-f.outerHeight()});
+		});	
+		
+		$(window).resize();
+});
