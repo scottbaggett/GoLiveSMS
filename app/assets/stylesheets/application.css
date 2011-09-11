@@ -5,3 +5,164 @@
  *= require_self
  *= require_tree . 
 */
+
+ /*---------------------------------||
+||              Reset              ||
+||----------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ /*---------------------------------||
+||             Body                 ||
+||----------------------------------*/
+
+
+body {
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-size: 13px; line-height: 1.3em;
+	color: black;
+}
+
+h2 { font-size: 34px; font-weight: bold; color: white; line-height: 1.2em;}
+h3 { font-weight: bold; font-size: 20px; line-height: 1.4em;  color: black;}
+
+.section { margin-bottom: 40px;}
+
+ /*---------------------------------||
+||           	 Home               ||
+||----------------------------------*/
+
+
+.home-wide { 
+	width: 100%;
+	background: url('/assets/blue-tile.png');
+	color: white;
+}
+
+.home-wide a, .home-wide a:visited { color: #aad6ff; }
+
+.home-wide h2 { font-family: "Arial Black", "Helvetica"; font-weight: 900; text-shadow: 2px 1px 2px black; margin-bottom: 30px; margin-right: 20px;}
+.home-wide .inner { padding: 40px 0px;}
+.home-wide p { font-size: 15px; line-height: 1.4em; text-shadow: 1px 1px 1px black; margin-right: 20px; }
+
+p.sub { margin-bottom: 40px; }
+p.contact { font-weight: bold; }
+.features li { margin-top: 20px; }
+.headline  { margin: 40px 0px; }
+
+.section p { margin-bottom: 20px; line-height: 20px; }
+ /*---------------------------------||
+||            Footer                ||
+||----------------------------------*/
+
+#footer {
+	background: black;
+	color: white;
+	font-weight: bold;
+	list-style: none;
+	font-size: 10px;
+}
+
+#footer li { margin-right: 20px;}
+
+#footer a, #footer a:visited {
+	color: orange;
+}
+
+#footer a:active, #footer a:hover { 
+	color: white; 
+	-webkit-transition: 0.3s color;
+    -moz-transition: 0.3s color;
+	     transition: 0.3s color;	
+}
+
+.left { float: left; }
+.right { float: right; }
+
+#footer ul, #footer li { display: inline;}
+#iphone { position: absolute; }
+
+.about { color: #444444; }
+
+ /*---------------------------------||
+||            Header                ||
+||----------------------------------*/
+
+
+#header {
+	width: 100%;
+	height: 89px;
+	line-height: 98px;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	background: url('/assets/headerbar-bg.jpg') repeat-x;
+}
+
+a.nav, a.nav:visited { margin-top: 4px; color: #bbc5d5; font-family: "Helvetica", "Arial"; background: none; padding: 8px 10px; border-radius: 7px; margin-right: 10px; text-decoration: none; }
+a.nav:hover { 
+	color: white;
+	background-color: black;
+}
+
+ /*---------------------------------||
+||        Terms & Conditions        ||
+||----------------------------------*/
+
+.terms h3 { font-size: 30px; line-height: 1.2em; }
+.line-item { text-align: right; }
+.terms p { margin-bottom: 20px; }
+
+ /*---------------------------------||
+||           Privacy                ||
+||----------------------------------*/
+
+.question { font-weight: bold; font-size: 15px; margin-bottom: 20px; }
+.privacy p { margin-bottom: 20px; }

@@ -31,3 +31,10 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+
+# Google Analytics
+# ===========
+group :production do
+  gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
